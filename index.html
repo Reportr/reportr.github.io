@@ -12,7 +12,11 @@
         <div id="page">
             <div class="intro">
                 <h1><span class="octicon octicon-pulse"></span> Reportr</h1>
-                <p>Your life's personal dashboard.</p>
+                <p class="subtitle">Your life's personal dashboard.</p>
+
+                <p class="actions">
+                    <a href="https://github.com/Reportr/dashboard" class="btn btn-lg btn-default"><span class="octicon octicon-mark-github"></span> <span class="stars-count">1800</span> stars on GitHub</a>
+                </p>
 
                 <div class="preview">
                     <div class="container">
@@ -22,4 +26,13 @@
             </div>
         </div>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $.getJSON("https://api.github.com/repos/Reportr/dashboard")
+        .done(function(repo) {
+            $(".stars-count").text(repo.stargazers_count);
+        });
+    });
+    </script>
 </html>
