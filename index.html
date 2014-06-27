@@ -10,29 +10,89 @@
     </head>
     <body>
         <div id="page">
-            <div class="intro">
-                <h1><span class="octicon octicon-pulse"></span> Reportr</h1>
-                <p class="subtitle">Your life's personal dashboard.</p>
-
-                <p class="actions">
-                    <a href="https://github.com/Reportr/dashboard" class="btn btn-lg btn-default"><span class="octicon octicon-mark-github"></span> <span class="stars-count">1800</span> stars on GitHub</a>
-                </p>
-
-                <div class="preview">
-                    <div class="container">
-                        <img src="https://raw.githubusercontent.com/Reportr/dashboard/master/preview.png" />
+            <div class="header clearfix">
+                <div class="container">
+                    <div class="buttons hidden-xs pull-right">
+                        <iframe src="http://ghbtns.com/github-btn.html?user=Reportr&amp;repo=dashboard&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+                        <iframe src="http://ghbtns.com/github-btn.html?user=SamyPesse&amp;type=follow&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="224px" height="30px"></iframe>
                     </div>
+                    <h1><span class="octicon octicon-pulse"></span> Reportr</h1>
+                </div>
+            </div>
+            <div class="intro">
+                <div class="container">
+                    <h2>Your life's personal dashboard</h2>
+
+                    <p class="actions">
+                        <a href="https://github.com/Reportr/dashboard">Learn more &amp; documentation</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="feature">
+                                <div class="icon"><span class="octicon octicon-broadcast"></span></div>
+                                <h4>Track Everything</h4>
+                                <p>Use reportr to track everything that happens in your life: online or offline.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature">
+                                <div class="icon"><span class="octicon octicon-graph"></span></div>
+                                <h4>Visualizations</h4>
+                                <p>Visualize your data in many differents ways: line chart, pie chart, map, list, etc.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature">
+                                <div class="icon"><span class="octicon octicon-mark-github"></span></div>
+                                <h4>Open Source</h4>
+                                <p>The project is completely free to use and open source.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="features">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="feature">
+                                <div class="icon"><span class="octicon octicon-browser"></span></div>
+                                <h4>Web Navigation</h4>
+                                <p>Measure and analyse your web navigation using a Google Chrome extension.</p>
+                                <p><a href="https://github.com/Reportr/tracker-googlechrome">Learn more</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature">
+                                <div class="icon"><span class="octicon octicon-home"></span></div>
+                                <h4>Home</h4>
+                                <p>Measure and home ambient (temperature, humidity, sound and luminosity levels) using <a href="https://tessel.io/">tessel.io</a>.</p>
+                                <p><a href="https://github.com/Reportr/tracker-home-ambient">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview">
+                <div class="container">
+                    <img src="https://raw.githubusercontent.com/Reportr/dashboard/master/preview.png" />
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="container">
+                Made with <span class="octicon octicon-heart heart"></span> by <a href="https://github.com/SamyPesse">Samy Pessé</a>
                 </div>
             </div>
         </div>
     </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        $.getJSON("https://api.github.com/repos/Reportr/dashboard")
-        .done(function(repo) {
-            $(".stars-count").text(repo.stargazers_count);
-        });
-    });
-    </script>
 </html>

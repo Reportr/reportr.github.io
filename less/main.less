@@ -22,35 +22,83 @@ body {
 }
 
 #page {
+    .header {
+        padding: 20px 0px;
 
+        h1 {
+            margin: 0px;
+            font-size: 40px;
+            font-weight: 200;
+            color: @brand-success;
+        }
+
+        .buttons {
+            margin-top: 10px;
+        }
+    }
 
     .intro {
-        padding: 15px;
-        position: relative;
-        overflow: hidden;
+        padding: 50px 0px;
         text-align: center;
         background: #f3f5f9;
         border-bottom: 1px solid #e0e4e8;
+        border-top: 1px solid #e0e4e8;
 
-        h1 {
-            font-size: 60px;
-            font-weight: 200;
-            color: @brand-success;
+        h2 {
+            font-size: 400%;
+            color: darken(@text-color, 20%);
         }
 
         p {
             font-size: 26px;
             font-weight: 200;
         }
+    }
 
-        .preview {
-            img {
-                width: 100%;
-                margin-bottom: -140px;
+    .features {
+        padding: 80px 0px;
+
+        .feature {
+            .clearfix();
+
+            .icon {
+                font-size: 40px;
+                line-height: 90px;
+
+                float: left;
+                margin-right: 20px;
+                color: @brand-success;
+            }
+
+            h4 {
+                color: @brand-success;
+            }
+
+            p, h4 {
+                margin-left: 60px;
             }
         }
     }
 
+    .preview {
+        overflow: hidden;
+        text-align: center;
 
+        img {
+            width: 100%;
+            max-width: 1000px;
+            margin-bottom: -140px;
+        }
+    }
+
+    .footer {
+        padding: 30px 0px;
+        text-align: center;
+        border-top: 1px solid #e0e4e8;
+
+        .heart {
+            color: @brand-danger;
+        }
+    }
 }
 
